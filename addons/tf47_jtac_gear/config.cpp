@@ -9,13 +9,33 @@ class CfgPatches
 			projectName="TF47_JTAC_GEAR";
 			author="Loki087";
 			url = "https://github.com/TaskForce47/tf47_jtac_gear";
-			units[] = {
-				"TF47_HG3D_RadioPack"
+			units[] = 
+			{
+				"TF47_HG3D_RadioPack","TF47_HG3D_RadioPack_Stativ"
 			};
-			weapons[] = {
+			weapons[] = 
+			{
 				"TF47_SOFLAM_Marker"
 			};			   
         };
+};
+class CfgFunctions
+{
+     class TF47_JTAC_CODE
+     {
+          class main
+          {
+               file="TF47_JTAC_GEAR\code\bootstrap";
+               class preInit
+               {
+                    preInit = 1;
+               };
+               class postInit
+               {
+                    postInit = 1;
+               };
+          };
+     };
 };
 class CfgEditorCategories
 {

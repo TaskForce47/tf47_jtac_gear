@@ -17,15 +17,11 @@ class CfgMagazines
 	};
 	class TF47_Soflam_Stativ: TF47_MAG_Default
 	{
-		author = "Loki087";
 		scope = 2;
-		count = 1;
-		type = 256;
 		displayName = "TF47 Soflam stativ";
 		picture = "\TF47_JTAC_GEAR\data\pictures\soflam.paa";
 		model = "\TF47_JTAC_GEAR\models\stativ.p3d";
 		descriptionShort = "Used to mount a Laser Marker";
-		mass = 20;
 		editorPreview = "\TF47_JTAC_GEAR\data\pictures\soflam.paa";
 	};
 };
