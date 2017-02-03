@@ -11,7 +11,8 @@ private ['_code', '_function', '_file'];
 }forEach
 [
 	['TF47_fnc_takeItem','TF47_JTAC_GEAR\code\TF47_fnc_takeItem.sqf'],
-	['TF47_fnc_putItem','TF47_JTAC_GEAR\code\TF47_fnc_putItem.sqf']
+	['TF47_fnc_putItem','TF47_JTAC_GEAR\code\TF47_fnc_putItem.sqf'],
+	['TF47_fnc_switchBackpack','TF47_JTAC_GEAR\code\TF47_fnc_switchBackpack.sqf']
 ];
 
 true
