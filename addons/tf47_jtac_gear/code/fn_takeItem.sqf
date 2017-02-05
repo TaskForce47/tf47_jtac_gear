@@ -10,8 +10,8 @@ if(_item isEqualTo "TF47_Soflam_Stativ") then
 {
 	if (typeOf(backpackContainer _unit) isEqualTo "TF47_HG3D_RadioPack")then 
 	{
-		[_unit,"TF47_HG3D_RadioPack_Stativ"] call TF47_fnc_switchBackpack;
-		_unit addItem "TF47_Soflam_Stativ";
+		(backpackContainer _unit) addItemToBackPack "TF47_Soflam_Stativ";
+		[_unit,"TF47_HG3D_RadioPack_Stativ"] call TF47_fnc_switchBackpack;		
 	};
 };
 

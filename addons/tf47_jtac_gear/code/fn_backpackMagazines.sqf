@@ -44,8 +44,9 @@ private _magsArray = [];
           _element = _arr call BIS_fnc_arrayPop;
      };
      _amount = parseNumber toString _amount;
+	 _magsArray pushBack [_classname,_ammo,_amount];
 
-     _magsArray pushBack [_classname,_ammo,_amount];
+    
 } forEach (backpackMagazines _unit);
 
 _magsArray

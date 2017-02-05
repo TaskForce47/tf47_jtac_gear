@@ -15,7 +15,7 @@ class CfgPatches
 			};
 			weapons[] = 
 			{
-				"TF47_SOFLAM_Marker"
+				"TF47_SOFLAM_Marker","TF47_Soflam_Stativ"
 			};			   
         };
 };
@@ -27,7 +27,6 @@ class CfgEditorCategories
 	};
 };
 #include "CfgVehicles.hpp"
-#include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
 #include "CfgFunctions.hpp"
 

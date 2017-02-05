@@ -1,7 +1,24 @@
 class CfgWeapons
 {
+	class ItemCore;
 	class Binocular;
 	class Laserdesignator;
+	class InventoryItem_Base_F;
+	
+    class TF47_Soflam_Stativ: ItemCore 
+	{
+        scope = 2;
+		author = "Loki087";
+        picture = "\TF47_JTAC_GEAR\data\pictures\soflam.paa";
+        displayName = "TF47 Soflam stativ";
+		model = "\TF47_JTAC_GEAR\models\stativ.p3d";
+		descriptionShort = "Used to mount a Laser Marker.";
+        descriptionUse = "";
+        class ItemInfo: InventoryItem_Base_F 
+		{
+            mass = 2;
+        };	
+	};	
 	class TF47_SOFLAM_Marker: Binocular
 	{
 		author="Loki087";
