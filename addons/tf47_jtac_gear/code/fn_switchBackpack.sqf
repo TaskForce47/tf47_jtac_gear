@@ -17,7 +17,7 @@ params ["_unit", "_newBackpackClass"];
 
 private _backpackitems = itemCargo (backpackContainer _unit) + weaponCargo (backpackContainer _unit) + backpackCargo (backpackContainer _unit);
 private _backpackmags = [_unit] call TF47_fnc_backpackMagazines;
-diag_log format ["TF47_fnc_backpackMagazines return:%1",_backpackmags];
+
 private _radioSettings = [];
 
 if !((_unit call TFAR_fnc_backpackLr) isEqualTo []) then {
@@ -41,8 +41,7 @@ if !((_unit call TFAR_fnc_backpackLr) isEqualTo []) then {
      _mag pushBack 1;
      _backpackmags pushBack _mag;
 } forEach weaponsItems (backpackContainer _unit);
-diag_log format ["handle attachments - _backpackmags:%1",_backpackmags];
-diag_log format ["handle attachments - _backpackitems:%1",_backpackitems];
+
 //remove old backpack
 removeBackpackGlobal _unit;
 
@@ -56,7 +55,6 @@ clearAllItemsFromBackpack _unit;
      if (isClass (configFile>> "CfgVehicles" >> _x)) then {
           (backpackContainer _unit) addBackpackCargoGlobal [_x, 1];
      } else {
-			diag_log format ["add backpack items - additemcargoglobal:%1",_x];
           (backpackContainer _unit) addItemCargo [_x, 1];
      };
 } forEach _backpackitems;
