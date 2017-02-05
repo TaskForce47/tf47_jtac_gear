@@ -19,24 +19,6 @@ class CfgPatches
 			};			   
         };
 };
-class CfgFunctions
-{
-     class TF47_JTAC_CODE
-     {
-          class main
-          {
-               file="TF47_JTAC_GEAR\code\bootstrap";
-               class preInit
-               {
-                    preInit = 1;
-               };
-               class postInit
-               {
-                    postInit = 1;
-               };
-          };
-     };
-};
 class CfgEditorCategories
 {
 	class TF47_Category 
@@ -47,4 +29,7 @@ class CfgEditorCategories
 #include "CfgVehicles.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgWeapons.hpp"
+#include "CfgFunctions.hpp"
+
+
 
