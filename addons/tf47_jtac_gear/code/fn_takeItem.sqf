@@ -9,9 +9,9 @@ params ["_unit","_container","_item"];
 if(_item isEqualTo "TF47_Soflam_Stativ") then 
 {
 	if (typeOf(backpackContainer _unit) isEqualTo "TF47_HG3D_RadioPack")then 
-	{
-		(backpackContainer _unit) addItemToBackPack "TF47_Soflam_Stativ";
+	{		
 		[_unit,"TF47_HG3D_RadioPack_Stativ"] call TF47_fnc_switchBackpack;		
+		_unit addItemToBackPack "TF47_Soflam_Stativ";
 	};
 };
 
